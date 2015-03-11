@@ -1,0 +1,6 @@
+*.pyc
+config.ini
+*.ipynb
+.ipynb_checkpoints
+*.txt
+/html/JSON/*.json

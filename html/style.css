@@ -1,0 +1,84 @@
+body {
+    font: normal x-small verdana,arial,helvetica,sans-serif;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+}
+#bodycontainer {
+    width: 552px;
+    background-color: #FCFCFC;
+    margin-left:auto; 
+    margin-right:auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888;
+}
+#header {
+    font: large verdana,arial,helvetica,sans-serif;
+    text-rendering: optimizeLegibility;
+    text-anchor: middle;
+    padding: 10px;
+}
+.infoBox {
+    text-align: left;
+    width: 492px;
+    padding: 10px;
+    margin: 10px;
+    margin-left:auto; 
+    margin-right:auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888;
+    background-color: #FFF;
+}
+
+a:link { /* unvisited link */
+    color: blue;
+    text-decoration: none;
+}
+a:visited { /* visited link */
+    color: #551a8b;
+    text-decoration: none;
+}
+
+table.center {
+    text-align: center;
+    margin: 10px;
+    margin-left:auto; 
+    margin-right:auto;
+}
+table, tr {
+    width: 512px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888;
+}
+tr:nth-child(even) {
+    background-color: #F8F8F8;
+}
+
+#theSVG {
+    width: 512px;
+    height: 512px;
+    margin-left:auto; 
+    margin-right:auto;
+    box-shadow: 4px 4px 4px #999;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888;
+    background-color: #FFF;
+}
+.node {
+    stroke: #fff;
+    stroke-width: 0px;
+}
+.link {
+    stroke: #000;
+    stroke-opacity: 0.1;
+}
+text {
+    font: normal x-small verdana,arial,helvetica,sans-serif;
+    text-rendering: optimizeLegibility;
+    pointer-events: none;
+    text-shadow: -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff;
+    text-anchor: middle;
+}
