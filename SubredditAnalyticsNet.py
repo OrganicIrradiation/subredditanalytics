@@ -2,7 +2,6 @@ from datetime import datetime
 import json
 import networkx as nx
 from networkx.readwrite import json_graph
-import matplotlib.pyplot as plt
 import pyLogger
 
 class SubredditAnalyticsNet(object):

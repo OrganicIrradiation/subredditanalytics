@@ -1,8 +1,10 @@
+from praw.errors import *
+from praw.handlers import MultiprocessHandler
+from requests.exceptions import HTTPError
+
 import itertools
 import pyLogger
 import praw
-from praw.errors import *
-from requests.exceptions import HTTPError
 
 class SubredditAnalyticsBot(object):
     def __init__(self):
@@ -32,8 +34,9 @@ class SubredditAnalyticsBot(object):
         self.userBanList = ['automoderator']
         
     def login(self, username, password, user_agent):
-        self.client = praw.Reddit(user_agent=user_agent)
-        self.client.login(username, password)
+        handler = MultiprocessHandler()
+        self.client = praw.Reddit(user_agent=user_agent, handler=handler)
+        self.client.login(username, password, disable_warning=True)
 
     def getUsers(self, subreddit):
         userList = []
